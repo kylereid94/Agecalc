@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #f5f5f5;
+	height: 100vh;
+	box-sizing: border-box;
+	padding: 40px 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1.5fr;
+    gap: 50px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "input"
+    "output";
+    background-color: white;
+    width: 50%;
+    margin: 0px auto;
+    padding: 60px 50px 50px 30px;
+    box-sizing: border-box;
+    border-radius: 40px 40px 50%;
+}
+
+.input {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 20px;
+    grid-auto-flow: row;
+    grid-template-areas: "in_month in_day in_year in_button";
+    grid-area: input;
+    border-style: none none solid;
+    border-bottom-width: thin;
+    border-bottom-color: #E6E6E6;
+	padding-bottom: 30px;
+}
+
+.input label {
+    font-size: 14px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    color: #4A4A4A;
+	text-transform: uppercase;
+	padding-left: 6px;
+}
+
+.input input {
+    width: 80%;
+    height: 40px;
+    border: 1px solid #E5E5E5;
+    font-size: 28px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 1000;
+	padding: 5px;
+	border-radius: 8px;
+}
+
+.in_month {
+	grid-area: in_month;
+}
+
+.in_day {
+	grid-area: in_day;
+}
+
+.in_year {
+	grid-area: in_year;
+}
+
+.in_button {
+	grid-area: in_button;
+	text-align: right;
+	position: relative;
+	bottom: -80px;
+}
+
+
+.in_button button {
+	font-size: 38px;
+	border-radius: 50%;
+	box-sizing: border-box;
+	height: 100px;
+	width: 100px;
+	text-align: center;
+	border-style: none;
+	background-color: #5100FF;
+	color: white;
+	padding-top: 8px;
+	padding-left: 8px;
+}
+
+.output { 
+	display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "out_years"
+    "out_months"
+    "out_days";
+  grid-area: output;
+}
+
+.output h1 {
+	font-size: 80px;
+	font-family: 'DM sans';
+	font-weight: 1000;
+}
+
+.output span {
+	color: #5100FE;
+}
+.out_years {
+	grid-area: out_years;
+}
+
+.out_months {
+	grid-area: out_months;
+}
+
+.out_days {
+	grid-area: out_days;
+}
+
+@media (max-width: 1079px){
+	
+}

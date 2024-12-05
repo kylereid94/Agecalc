@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Frontend Mentor | Age calculator app</title>
+	<link href="index.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css">
+</head>
+<body>
+<div class="container">
+	<form class="input" onsubmit="calculateDateDifference(event)">
+			<div class="in_month">
+				<label for="mt">Month</label><br>
+				<input type="text" id="mt">
+			</div>
+			<div class="in_day">
+				<label for="dy">Day</label><br>
+				<input type="text" id="dy">
+			</div>
+			<div class="in_year">
+				<label for="yr">Year</label><br>
+				<input type="text" id="yr">
+			</div>
+			<div class="in_button">
+				<button type="submit"><i class="fi fi-ss-memo-circle-check"></i></button>
+			</div>
+	</form >
+	<div class="output">
+		<div class="out_years">
+			<h1><span class="out_year_number" id="out_year">--</span> years</h1>
+		</div>
+		<div class="out_months">
+			<h1><span class="out_month_number" id="out_month">--</span> months</h1>
+		</div>
+		<div class="out_days">
+			<h1><span class="out_day_number" id="out_day">--</span> days</h1>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
